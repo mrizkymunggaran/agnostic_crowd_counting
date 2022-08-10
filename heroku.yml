@@ -1,7 +1,8 @@
-build:
-  docker:
-    flask: flask/Dockerfile
-    streamlit: streamlit/Dockerfile
+# build:
+#   docker:
+#     flask: flask/Dockerfile
+#     streamlit: streamlit/Dockerfile
 
-# run:
-#   web: strimlit run strimlit/main.py
+run:
+  web: 
+  - ./run.sh
