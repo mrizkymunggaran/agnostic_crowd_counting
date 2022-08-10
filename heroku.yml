@@ -2,9 +2,6 @@ build:
   docker:
     flask: flask/Dockerfile
     web: streamlit/Dockerfile
-release:
-  image: web
-
-# run:
-#   web: 
-#   - ./run.sh
+run:
+  web: python3 app.py
+  flask: streamlit run main.py
