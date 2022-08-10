@@ -1,4 +1,5 @@
 
+pip3 install docker
 docker network create agnostic-counting
 
 ## cd nodeflux_task
