@@ -13,5 +13,5 @@ docker stop flask && docker start flask
 cd ..
 cd streamlit
 docker build --tag streamlit .
- docker run  --rm -p 5000:8501 --network agnostic-counting --name web streamlit
+ docker run  --rm -p 5000:5000 --network agnostic-counting --name web streamlit
 #docker run  --rm -p 5000:8501  --name web streamlit

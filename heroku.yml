@@ -1,7 +1,9 @@
 build:
   docker:
     flask: flask/Dockerfile
-    streamlit: streamlit/Dockerfile
+    web: streamlit/Dockerfile
+release:
+  image: web
 
 # run:
 #   web: 
