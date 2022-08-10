@@ -1,0 +1,7 @@
+build:
+  docker:
+    flask: flask/Dockerfile
+    strimlit: strimlit/Dockerfile
+
+run:
+  web: strimlit run strimlit/main.py
