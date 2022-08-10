@@ -1,5 +1,6 @@
 
-pip3 install docker
+apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+
 docker network create agnostic-counting
 
 ## cd nodeflux_task
