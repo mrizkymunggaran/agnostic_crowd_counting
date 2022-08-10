@@ -10,6 +10,7 @@ import io
 import numpy as np
 import matplotlib
 from io import BytesIO
+import os
 
 app = Flask(__name__)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -213,4 +214,5 @@ def hello_world():
     return "<p>Test</p>"
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8080, threaded=True, host=('0.0.0.0'))
+    port = int(os.environ.get('PORT', 8080))
+    app.run(debug=True, port=port, threaded=True, host='0.0.0.0')

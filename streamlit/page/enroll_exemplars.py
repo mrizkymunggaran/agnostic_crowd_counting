@@ -28,7 +28,10 @@ def enroll():
     # img_file = st.sidebar.file_uploader(label='Upload a file', type=['png', 'jpg'])
     st.session_state['query_path'] = img_file
   else:
-    img_file = st.session_state.query_path
+    if img_file is None:
+            # st.write(img_file)
+            img_file = st.session_state.query_path
+   
 
   # img_file = st.sidebar.file_uploader(label='Upload a file', type=['png', 'jpg'])
   # st.session_state['query'] = img_file
@@ -57,6 +60,7 @@ def enroll():
           _ = cropped_img.thumbnail((150,150))
           st.image(cropped_img)
           st.session_state['exemplars_img'].append(cropped_img)
+          st.session_state['query_path'] = img_file
       else:
         st.subheader('Image not picked!')
         break

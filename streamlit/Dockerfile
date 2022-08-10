@@ -17,7 +17,7 @@ RUN pip3 install -r requirements.txt
 # Copy all & Run
 COPY . .
 
-# EXPOSE 8501
-EXPOSE 8000
+EXPOSE 8501
+
 
 CMD [ "streamlit", "run", "main.py" ]

@@ -1,0 +1,28 @@
+version: '3'
+services:
+  flask:
+    container_name: flask
+    hostname: flask
+    build: ./flask
+
+    ports:
+      - "8080:8081"
+    # networks:
+    #   - agnostic-counting 
+
+  web:
+    container_name: web
+    build: ./streamlit    
+    
+    ports:
+      - "5000:8051"    
+    # networks:
+    #   - agnostic-counting
+
+# networks:
+#   agnostic-counting:
+#    driver: bridge
+#   outside:
+#     external: true
+
+
