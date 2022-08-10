@@ -1,0 +1,6 @@
+torch==1.9.0
+torchvision==0.10.0
+Flask==2.1.2
+matplotlib==3.5.2
+numpy==1.23.1
+yacs==0.1.8
