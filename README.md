@@ -8,6 +8,9 @@ Because we will use different docker images for each service (Streamlit for web 
 docker network create agnostic-counting
 ```
 
+## RUN DOCKER COMPOSE WITHOUT BRIDGE
+docker-compose up --build  
+
 ## Run the Model API Serving Docker
 
 After we create the network bridge, we can just create both docker running by: 
